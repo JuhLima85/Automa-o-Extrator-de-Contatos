@@ -4,12 +4,15 @@
 
 Este projeto automatiza a extração de números de telefone de um sistema com base em uma lista pré fornecida em uma planilha Excel. Ele utiliza Selenium para navegar no sistema, realizar login, buscar informações de contato, salvar os números de telefone encontrados de volta na planilha Excel original e disponibiliza para download.
 
-## Pré-requisitos
+## Tecnologias Utilizadas
 
-* Java 17
-* Maven
-* ChromeDriver (compatível com a versão do seu Chrome)
-* Planilha Excel com a coluna "BENEFICIO" preenchida.
+Este projeto foi desenvolvido utilizando as seguintes tecnologias:
+
+* **Java:** A linguagem de programação principal para a lógica de automação e manipulação de dados.
+* **Selenium WebDriver:** Para automação da interação com a interface web do sistema, permitindo a navegação e extração de dados.
+* **Apache POI:** Uma biblioteca Java para manipulação de arquivos Excel, usada para leitura da lista de benefícios e escrita dos números de telefone extraídos.
+* **ChromeDriver:** O driver específico do navegador Chrome, necessário para o Selenium WebDriver interagir com o Chrome.
+* **Maven:** Para gerenciamento de dependências e construção do projeto.
 
 ## Configuração
 
@@ -32,12 +35,3 @@ Este projeto automatiza a extração de números de telefone de um sistema com b
     mvn clean install
     ```
 
-## Tecnologias Utilizadas
-
-Este projeto foi desenvolvido utilizando as seguintes tecnologias:
-
-* **Java:** A linguagem de programação principal para a lógica de automação e manipulação de dados.
-* **Selenium WebDriver:** Para automação da interação com a interface web do sistema, permitindo a navegação e extração de dados.
-* **Apache POI:** Uma biblioteca Java para manipulação de arquivos Excel, usada para leitura da lista de benefícios e escrita dos números de telefone extraídos.
-* **ChromeDriver:** O driver específico do navegador Chrome, necessário para o Selenium WebDriver interagir com o Chrome.
-* **Maven:** Para gerenciamento de dependências e construção do projeto.
