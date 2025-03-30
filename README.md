@@ -17,7 +17,7 @@ Este projeto automatiza a extração de números de telefone de um sistema com b
     * Baixe o ChromeDriver compatível com a sua versão do Google Chrome e coloque-o na pasta `resources/drivers/`.
     * Verifique se o caminho do ChromeDriver está correto no código (`String driverPath = System.getProperty("user.dir") + "/resources/drivers/chromedriver";`).
 2.  **Planilha Excel:**
-    * Crie uma planilha Excel com uma coluna chamada "BENEFICIO" contendo os nomes dos benefícios que você deseja pesquisar no sistema Corban.
+    * Crie uma planilha Excel com uma coluna chamada "BENEFICIO" contendo os nomes dos benefícios que você deseja pesquisar no sistema.
     * Salve a planilha em um local acessível e configure o caminho da planilha no código (`setCaminhoPlanilha`).
 3.  **Credenciais:**
     * As credenciais de login do sistema (usuário e senha) serão passadas como parâmetros para o método `executarAutomacao`.
