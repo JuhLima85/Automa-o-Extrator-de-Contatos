@@ -32,9 +32,7 @@ public class AutomacaoCorbanService {
         this.caminhoPlanilha = caminhoCompleto;
     }
 
-    public void executarAutomacao(String usuario, String senha) {
-        //System.setProperty("webdriver.chrome.driver", "C:\\webdriver\\chromedriver.exe");
-        //System.setProperty("webdriver.chrome.driver", "C:\\workspace-intelliJ 2\\automacao\\drivers\\chromedriver.exe");
+    public String executarAutomacao(String usuario, String senha) {
         String driverPath = System.getProperty("user.dir") + "/resources/drivers/chromedriver";
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -70,6 +68,7 @@ public class AutomacaoCorbanService {
         } finally {
             driver.quit();
         }
+        return "Telefones capturados e salvos com sucesso! A planilha está pronta para ser baixada.";
     }
 
     private void fazerLogin(WebDriver driver, WebDriverWait wait, String usuario, String senha) {

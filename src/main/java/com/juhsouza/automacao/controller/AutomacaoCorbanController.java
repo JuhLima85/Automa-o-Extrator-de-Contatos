@@ -22,8 +22,8 @@ public class AutomacaoCorbanController {
             @RequestParam("senha") String senha) {
 
         automacaoCorbanService.setCaminhoPlanilha(caminhoPlanilha);
-        automacaoCorbanService.executarAutomacao(usuario, senha);
+        String mensagemFinal = automacaoCorbanService.executarAutomacao(usuario, senha);
 
-        return ResponseEntity.ok("Automação iniciada com a planilha: " + caminhoPlanilha);
+        return ResponseEntity.ok(mensagemFinal);
     }
 }
